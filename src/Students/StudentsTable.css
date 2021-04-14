@@ -1,0 +1,70 @@
+.table-container {
+  height: 80vh;			/* Have table take up 80% of the browser's viewport height. */
+  overflow-y: scroll;	/* Always display y-axis scrollbar so table size doesn't change when the need for the scrollbar changes. */
+}
+
+.table-loading-shade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 56px;
+  right: 0;
+  background: rgba(0, 0, 0, 0.15);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.MuiTable-root {
+  border-collapse: collapse;
+}
+
+/* Add border padding to each cell. NOTE: the border color matches the hover color below. */
+.MuiTableCell-body {
+  border: 1px solid #ddd;
+}
+
+.MuiTableCell-head {
+  background: #fff;
+  position: sticky;
+  top: -1px;
+  z-index: 990;
+}
+
+.MuiTableCell-footer {
+  background: #fff;
+  position: sticky;
+  bottom: 0px;
+  z-index: 990;
+}
+
+/* Make table zebra stripped. */
+.MuiTableBody-root tr:nth-child(2n+1) {
+  background-color: #f2f2f2
+}
+
+/* Highlight rows on hover. */
+.MuiTableBody-root tr:hover {
+  background-color: #ddd;
+}
+
+.column-filtered {
+  background-color: rgb(170,170,170);
+}
+
+.column-not-filtered {
+  background-color: none;
+}
+
+.column-select {
+  width: 40px;
+}
+
+.column-detail {
+  width: 40px;
+}
+
+.student-school-id {
+  width: 140px;
+}
